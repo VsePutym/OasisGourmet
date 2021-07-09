@@ -1,9 +1,12 @@
 import './App.css';
+import Home from "./components/Home/Home";
+import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
   return (
     <div className="App">
-     1
+      <Home/>
+      <NavBar />
     </div>
   );
 }

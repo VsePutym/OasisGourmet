@@ -1,0 +1,59 @@
+.slide1 {
+    position: absolute;
+    top: 300px;
+}
+
+.slide2 {
+    bottom: 270px;
+    position: absolute;
+}
+
+.slide3 {
+    left: 300px;
+    position: absolute;
+}
+
+.slide4 {
+    right: 300px;
+    position: absolute;
+}
+
+
+.wrapper {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.centerSpinner {
+    margin-left: 0;
+    margin-top: -200px;
+    width: 100px;
+    height: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .centerSpinner {
+        animation: center-spin infinite 30s linear;
+    }
+}
+
+@keyframes center-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.maine span{
+    color: #D97C67;
+    font-size: 40px;
+    margin: 40px;
+    font-weight: 700;
+}
+
+.maine{
+    /*margin-top: 50px;*/
+}
