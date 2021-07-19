@@ -32,9 +32,10 @@
     height: 100px;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
     .centerSpinner {
-        animation: center-spin infinite 30s linear;
+        animation: center-spin infinite 60s linear;
     }
 }
 
@@ -52,8 +53,14 @@
     font-size: 40px;
     margin: 40px;
     font-weight: 700;
+    font-family: Roboto sans-serif;
 }
 
-.maine{
-    /*margin-top: 50px;*/
+@media (max-width: 500px) {
+    @media (prefers-reduced-motion: no-preference) {
+        .centerSpinner {
+            animation: center-spin infinite 30s linear;
+        }
+    }
 }
+
