@@ -1,0 +1,55 @@
+.Wrapper h1{
+    color: white;
+}
+
+.groupsTitle{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.titleGroups span,
+.groupsTitle span{
+    color: #d97c67;
+    font-size: 90px;
+}
+.titlesItaly{
+    margin-left: 30px;
+    text-align: left;
+    margin-top: 200px;
+}
+.titleGroups{
+    margin-left: 90px;
+}
+
+.titleOasis{
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    position: relative;
+    text-shadow: 15px 5px black;
+
+}
+
+.titleGourmet span{
+    margin-left: -30px;
+    color: #d97c67;
+    position: absolute;
+    margin-top: -50px;
+    text-shadow: 15px 5px black;
+}
+
+.madeTitle,
+.loveTitle {
+    font-size: 40px;
+    color: white;
+}
+
+.madeTitle{
+    position: relative;
+}
+.loveTitle{
+    position: absolute;
+    margin-left: 120px;
+    color: #d97c67;
+}

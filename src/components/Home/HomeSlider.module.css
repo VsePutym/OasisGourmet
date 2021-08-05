@@ -27,7 +27,7 @@
 
 .centerSpinner {
     margin-left: 0;
-    margin-top: -200px;
+    margin-top: -250px;
     width: 100px;
     height: 100px;
 }
@@ -35,7 +35,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .centerSpinner {
-        animation: center-spin infinite 60s linear;
+        animation: center-spin infinite 30s linear;
     }
 }
 
