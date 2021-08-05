@@ -3,6 +3,7 @@ import HomeSlider from "./HomeSlider";
 import BackGround from '../../images/Home/8.jpg'
 import styled, { keyframes } from 'styled-components';
 import { rollIn } from 'react-animations';
+import { zoomIn } from 'react-animations';
 import React from "react";
 
 const shakeAnimation = keyframes`${rollIn}`;
@@ -11,6 +12,11 @@ const Shake = styled.div`
   animation: 4s ${shakeAnimation};
 `;
 
+const zoomInAnimation = keyframes`${zoomIn}`;
+
+const ZoomIn = styled.div`
+  animation: 4s ${zoomInAnimation};
+`;
 
 const clientHeight = document.documentElement.clientHeight;
 const MaineBG = styled.div`
@@ -35,11 +41,13 @@ const Home = () => {
         <h1 className={s.titleGourmet}><span>Gourmet</span></h1>
       </div>
       </Shake>
+      <ZoomIn>
       <div className={s.titlesItaly}>
         <h1 className={s.groupsTitle}><span>I</span>taly <span>G</span>roups</h1>
         <h1 className={s.madeTitle}>Made with love</h1>
         <h1 className={s.loveTitle}>for you</h1>
       </div>
+      </ZoomIn>
     </MaineBG>
   )
 }
