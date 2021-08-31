@@ -1,0 +1,31 @@
+.totalCount {
+  display: flex;
+justify-content: center;
+}
+
+.titleCount {
+}
+
+.btnCountPlus,
+.btnCountMinus {
+  border: none;
+  background-color: #282936;
+  border-radius: 50%;
+  color: white;
+}
+
+.btnCountMinus {
+  padding: 1px 12px 1px 12px;
+  margin-right: 5px;
+  margin-left: 60px;
+}
+
+.btnCountPlus {
+  padding: 1px 12px 1px 12px;
+  margin-left: 5px;
+}
+
+.inputCount {
+  border: none;
+  text-align: center;
+}

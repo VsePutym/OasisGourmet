@@ -1,54 +1,45 @@
 import s from './Home.module.css';
-import HomeSlider from "./HomeSlider";
-import BackGround from '../../images/Home/8.jpg'
+import BackGround from '../../images/Home/Background.jpg'
 import styled, { keyframes } from 'styled-components';
-import { rollIn } from 'react-animations';
 import { zoomIn } from 'react-animations';
 import React from "react";
+import Oasis from '../../images/Home/noroot.png';
 
-const shakeAnimation = keyframes`${rollIn}`;
+const animateZoom = keyframes`${zoomIn}`;
 
-const Shake = styled.div`
-  animation: 4s ${shakeAnimation};
+const Zoom = styled.div`
+  animation: 4s ${animateZoom};
 `;
-
-const zoomInAnimation = keyframes`${zoomIn}`;
-
-const ZoomIn = styled.div`
-  animation: 4s ${zoomInAnimation};
-`;
-
-const clientHeight = document.documentElement.clientHeight;
 const MaineBG = styled.div`
   background-image: url("${BackGround}");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   background-position: center;
-  height: ${clientHeight}px;
+  height: 100vh;
   overflow: hidden;
 `
 
 const Home = () => {
+
   return (
-    <MaineBG>
-      <div className={s.Wrapper}>
-        <HomeSlider/>
-      </div>
-      <Shake>
-      <div className={s.titleOasis}>
-        <h1>Oasis</h1>
-        <h1 className={s.titleGourmet}><span>Gourmet</span></h1>
-      </div>
-      </Shake>
-      <ZoomIn>
-      <div className={s.titlesItaly}>
-        <h1 className={s.groupsTitle}><span>I</span>taly <span>G</span>roups</h1>
-        <h1 className={s.madeTitle}>Made with love</h1>
-        <h1 className={s.loveTitle}>for you</h1>
-      </div>
-      </ZoomIn>
-    </MaineBG>
+    <div>
+      <MaineBG >
+        <div className={s.Wrapper}>
+          {/*<HomeSlider/>*/}
+        </div>
+        <Zoom>
+          <div className={s.titleOasis}>
+            <img src={Oasis} alt=""/>
+          </div>
+        </Zoom>
+          <div className={s.titlesItaly}>
+            <div className={s.groupsTitle}><span>I</span>taly <span>G</span>roup</div>
+            <div className={s.madeTitle}>Made with love</div>
+            <div className={s.madeTitle}><span>For you</span></div>
+          </div>
+      </MaineBG>
+    </div>
   )
 }
 

@@ -1,0 +1,37 @@
+.wrapper{
+    display: flex;
+    text-align: center;
+}
+
+.titleChildrenMenu{
+    color: white;
+    font-size: 50px;
+    padding-top: 80px;
+}
+
+.item{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+.itemsB,
+.itemsK{
+    padding-top: 40px;
+    transform: translateY(-70%);
+    position: absolute;
+    z-index: 3;
+}
+.itemsK{
+    left: 17%;
+}
+.itemsB{
+    right: 17%;
+}
+
+.item:hover{
+    cursor: pointer;
+    color: #d97c67;
+}
+.items{
+    padding-top: 20px;
+}

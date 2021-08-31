@@ -1,0 +1,37 @@
+.slides {
+  transition: all 1s;
+  max-width: 900px;
+  width: 100%;
+  img {
+    border-radius: 20px;
+    position: absolute;
+    z-index: 20;
+    right: 0;
+    bottom: 0;
+    transition: all 1s;
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+.maineSlider {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+}
+
+.arrowPrev {
+  width: 70px;
+  position: absolute;
+  left: -20%;
+  top: 45%;
+}
+
+.arrowNext {
+  width: 70px;
+  position: absolute;
+  right: -20%;
+  top: 45%;
+}

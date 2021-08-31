@@ -1,0 +1,95 @@
+//font-family: 'Pattaya', sans-serif;
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Pinyon Script', cursive;
+
+
+.container {
+  text-align: center;
+}
+
+.BG {
+  height: 400px;
+  font-family: 'Pinyon Script', cursive;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 50px;
+  h1{
+    text-shadow: 27px 20px 4px black;
+  }
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  h1{
+    font-family: 'Pinyon Script', cursive;
+  }
+  span{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.item{
+  padding-top: 20px;
+  font-size: 16px;
+  display: grid;
+  grid-template-areas: 'a b c d';
+  grid-template-columns: 13fr 9fr 5fr 5fr;
+}
+.Fonts{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 20px;
+  font-weight: 500;
+  grid-area: a;
+}
+.rusName{
+  grid-area: b;
+}
+.weight{
+  grid-area: c;
+}
+.border{
+  max-width: 300px;
+  height: 1px;
+  background-color: #282936;
+  margin: 50px auto 0;
+}
+.price{
+  grid-area: d;
+}
+.items{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.img{
+  display: block;
+  height: 300px;
+  position: relative;
+}
+.name,
+.wineCircle{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin:  0 auto;
+}
+
+.name{
+  font-family: 'Pinyon Script', cursive;
+  bottom: 20%;
+  font-size: 70px;
+  right: -8%;
+  font-weight: 500;
+  z-index: 5;
+}
+.wineCircle{
+  z-index: 3;
+  width: 400px;
+  bottom: -20%;
+}
+

@@ -1,0 +1,32 @@
+.container {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.title {
+  text-align: center;
+  padding: 70px 50px;
+  background-color: #282936;
+  color: white;
+}
+
+.Sheff {
+  text-align: center;
+  border: 20px solid #282936;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #282936;
+  color: white;
+  img{
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+.container{
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  color: white;
+}
+.price{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.info{
+  z-index: 20;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+}
+.imgBG{
+  position: absolute;
+  top: 0;
+  background-color: #282936;
+  height: 60vh;
+  content: "";
+  width: 100%;
+}

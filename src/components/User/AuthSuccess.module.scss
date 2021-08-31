@@ -1,0 +1,82 @@
+.container{
+  right: 0;
+  left: 0;
+  text-align: center;
+  &:after {
+   background-color: black;
+    content : "";
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  img{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 200px;
+    z-index: 5;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+.UserInfo{
+  text-align: center;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #282936;
+  margin: 80px auto;
+  max-width: 500px;
+  width: 100%;
+  z-index: 5;
+  right: 5%;
+  left: 0;
+  //border: 2px solid #282936;
+  box-shadow: 10px 5px 5px black;
+  overflow: hidden;
+}
+.bg{
+  background-color: white;
+}
+
+.wrapper{
+  background-color: #282936;
+  width: 100%;
+}
+.Italy{
+  font-weight: 700;
+  position: absolute;
+  bottom: 5%;
+  font-size: 53px;
+  color: white;
+  right: 5%;
+  left: 0;
+  margin: 0 auto;
+  text-shadow: 5px 1px 2px black;
+  z-index: 5;
+}
+.title{
+  background-color: #282936;
+  color: white;
+  //border-radius: 20px;
+  //width: 110%;
+  p{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.user{
+  padding-top: 20px;
+}
+.logOutAndChange{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.btnLogOut{
+  padding-right: 50px;
+}

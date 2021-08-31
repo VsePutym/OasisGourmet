@@ -3,7 +3,7 @@ const navBar = {
 		{
 			name: "home",
 			id: 0,
-			img: '../../../images/NavBar/home.svg',
+			img: '../../images/NavBar/home.svg',
 			href: '/home',
 			flag: false
 		},
@@ -34,22 +34,8 @@ const navBar = {
 			img: '../../images/NavBar/aboutUs.svg',
 			href: '/aboutUs',
 			flag: true
-		},
-		{
-			name: "phone",
-			id: 4,
-			img: '../../images/NavBar/phone.svg',
-			href: '/phone',
-			flag: true
-		},
-		{
-			name: "exit",
-			id: 5,
-			img: '../../images/NavBar/exit.svg',
-			href: '/exit',
-			flag: true
 		}
-	]
+	],
 };
 
 export default navBar;

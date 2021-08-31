@@ -4,52 +4,44 @@
 
 .groupsTitle{
     color: white;
-    font-size: 70px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-size: 20px;
+    padding-right: 20px;
 }
-.titleGroups span,
-.groupsTitle span{
+
+.titlesItaly span{
     color: #d97c67;
-    font-size: 90px;
+    font-size: 20px;
 }
 .titlesItaly{
-    margin-left: 30px;
+    display: flex;
+    position: absolute;
+    left: -140px;
+    bottom: 170px;
     text-align: left;
-    margin-top: 200px;
+    transform: rotate(-90deg);
+    font-weight:400;
 }
 .titleGroups{
-    margin-left: 90px;
+    margin-left: 30px;
 }
 
 .titleOasis{
-    font-size: 90px;
-    color: white;
     text-align: center;
     position: relative;
-    text-shadow: 15px 5px black;
-
+}
+.titleOasis img{
+    margin-top: 250px;
+    width: 300px;
+    height: 110px;
 }
 
-.titleGourmet span{
-    margin-left: -30px;
-    color: #d97c67;
-    position: absolute;
-    margin-top: -50px;
-    text-shadow: 15px 5px black;
-}
-
-.madeTitle,
-.loveTitle {
-    font-size: 40px;
-    color: white;
-}
 
 .madeTitle{
+    font-size: 20px;
+    color: white;
     position: relative;
+    padding-right: 20px;
 }
-.loveTitle{
-    position: absolute;
-    margin-left: 120px;
-    color: #d97c67;
+.titleOasis{
+    left: -20%;
 }
