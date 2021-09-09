@@ -89,3 +89,5 @@ const SnacksMenuDB = {
     }
   ]
 }
+
+export default SnacksMenuDB;

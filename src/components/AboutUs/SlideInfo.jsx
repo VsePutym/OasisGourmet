@@ -6,7 +6,7 @@ import UseLine from "../../hooks/AboutUs/UseLine";
 import {useRef} from "react";
 import React from "react";
 
-const DryAged = () => {
+const SlideInfo = (props) => {
 
   const LineRef = useRef();
   const btnSlidePrev = useRef();
@@ -38,4 +38,4 @@ const DryAged = () => {
   )
 }
 
-export default DryAged;
+export default SlideInfo;

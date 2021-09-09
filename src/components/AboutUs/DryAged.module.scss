@@ -15,7 +15,7 @@
   img {
     position: absolute;
     bottom: 0;
-    background-attachment: fixed;
+    width: 450px;
   }
 }
 
@@ -81,23 +81,25 @@
   content: "";
   z-index: 10;
 }
-.btnSlidePrev,
-.btnSlideNext{
+.btnsSlide{
   padding-top: 150px;
   position: absolute;
-  bottom: 35%;
-  left: 30%;
+  bottom: 40%;
+  left: 27%;
+  display: flex;
+  justify-content: space-around;
 }
 .btnSlidePrev{
-  padding-left: 50px;
+  width: 70px;
+}
+.btnSlideNext{
+  width: 70px;
+  margin-right: 30px;
 }
 
 @media(max-width: 500px)  {
-  .btnSlidePrev,
-  .btnSlideNext{
-    padding-top: 150px;
-    position: absolute;
-    bottom: 35%;
+  .btnsSlide{
+    bottom: 20%;
     left: 50%;
   }
   .imgDry {

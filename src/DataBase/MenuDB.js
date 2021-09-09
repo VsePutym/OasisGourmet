@@ -5,7 +5,7 @@ const MenuDB = {
     {name: 'Закуски', id: 2, href: '/menu/snacks'},
     {name: 'Десерты', id: 3, href: '/menu/desserts'},
     {name: 'Пицца', id: 4, href: '/menu/pizza'},
-    {name: 'Суши', id: 5, href: '/menu/sushi'}],
+    {name: 'Суши', id: 5, href: '/menu/panasia'}],
 
   menuBar :[
     {name: 'Винная карта', id: 0, href: '/menu/wine'},

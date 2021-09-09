@@ -1,0 +1,155 @@
+.groupsTitle {
+  color: white;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.titlesItaly span {
+  color: #d97c67;
+  font-size: 20px;
+}
+
+.titlesItaly {
+  display: flex;
+  position: absolute;
+  left: -140px;
+  bottom: 170px;
+  text-align: left;
+  transform: rotate(-90deg);
+  font-weight: 400;
+}
+
+.titleGroups {
+  margin-left: 30px;
+}
+
+.titleOasis {
+  text-align: center;
+  position: relative;
+}
+
+.titleOasis img {
+  margin-top: 250px;
+  width: 300px;
+  height: 110px;
+}
+
+
+.madeTitle {
+  font-size: 20px;
+  color: white;
+  position: relative;
+  padding-right: 20px;
+}
+
+.titleOasis {
+  left: -20%;
+}
+
+
+@media(max-width: 500px) {
+  .titlesItaly {
+    bottom: 230px;
+  }
+  .titleOasis {
+    margin: -200px auto;
+    right: 0;
+    left: 0;
+  }
+}
+
+.test {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 400px;
+  border: 2px solid #282936;
+  border-radius: 20px;
+}
+
+.Banket {
+  color: white;
+}
+
+.mainInfo {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  padding-top: 50px;
+  font-size: 16px;
+}
+
+.left {
+  position: relative;
+  padding: 1rem 3.2rem;
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.2rem;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+  border-bottom: 1px solid white;
+  border-radius: 20px;
+}
+
+.left:before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  transition: inherit;
+  top: 0;
+  width: 0;
+  height: 100%;
+  right: 0;
+  border: 3px solid #d97c67;
+  border-radius: 20px;
+  border-left: 0;
+  border-right: 0;
+}
+.left:after{
+  z-index: -1;
+  content: '';
+  position: absolute;
+  transition: inherit;
+  top: 0;
+  width: 0;
+  height: 100%;
+  left: 0;
+}
+.left:hover {
+  border-bottom: 1px solid transparent;
+  color: white;
+  transition-delay: 0.5s;
+}
+
+.left:hover:before {
+  transition-delay: 0s;
+  width: 100%;
+}
+
+.left:hover:after {
+  border-radius: 20px;
+  background: #282936;
+  transition-delay: .35s;
+  width: 100%;
+}
+
+.social{
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  img{
+    width: 50px;
+  }
+}
+.facebook,
+.instagram{
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-top: 20px;
+  p{
+    padding-left: 20px;
+  }
+}

@@ -1,35 +1,35 @@
 const navBar = {
 	items: [
 		{
-			name: "home",
+			name: "Главная",
 			id: 0,
 			img: '../../images/NavBar/home.svg',
 			href: '/home',
 			flag: false
 		},
 		{
-			name: "menu",
+			name: "Меню",
 			id: 6,
 			img: '../../images/NavBar/menu.svg',
 			href: '/menu',
 			flag: true
 		},
 		{
-			name: "user",
+			name: "Профиль",
 			id: 1,
 			img: '../../images/NavBar/user.svg',
 			href: '/user',
 			flag: true
 		},
 		{
-			name: "cart",
+			name: "Заказ",
 			id: 2,
 			img: '../../images/NavBar/cart.svg',
 			href: '/cart',
 			flag: true
 		},
 		{
-			name: "aboutUs",
+			name: "О нас",
 			id: 3,
 			img: '../../images/NavBar/aboutUs.svg',
 			href: '/aboutUs',

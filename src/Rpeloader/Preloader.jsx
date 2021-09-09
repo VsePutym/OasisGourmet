@@ -2,8 +2,8 @@ import s from './Preloader.module.css';
 import styled from 'styled-components';
 
 const ItemPreloader = styled.div`
-  background-color: #1c2326;
-  height: ${(props) => props.height}px;
+  background-color: #282936;
+  height: 100vh;
 `
 
 const Preloader = () => {

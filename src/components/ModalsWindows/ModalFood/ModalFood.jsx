@@ -6,12 +6,15 @@ import {totalPriceItem} from "../../../Functions/Functions";
 
 const ModalFood = ({hookOpenItem, setHookOpenItem, hookOrders, setHookOrders}) => {
   const getHookCounter = UseCountItem(hookOpenItem.count);
+  const isEdit = hookOpenItem.index > -1;
+
+  const btnAddOrder = 'Заказать';
+  const btnEditOrder = 'Изменить';
 
   const order = {
     ...hookOpenItem,
     count: getHookCounter.hookCountItem
   }
-
 
   return (
     <div>
@@ -26,7 +29,10 @@ const ModalFood = ({hookOpenItem, setHookOpenItem, hookOrders, setHookOrders}) =
           <div className={s.totalPriceItem}>Итог<span>{totalPriceItem(order)}</span>Р</div>
         </div>
           <CountItem {...getHookCounter}/>
-        <ButtonCart hookOrders={hookOrders} setHookOrders={setHookOrders} setHookOpenItem={setHookOpenItem} order={order} />
+        <ButtonCart isEdit={isEdit} hookOrders={hookOrders} setHookOrders={setHookOrders}
+                    btnAddOrder={btnAddOrder} btnEditOrder={btnEditOrder}
+                    hookOpenItem={hookOpenItem}
+                     setHookOpenItem={setHookOpenItem} order={order} />
       </div>
     </div>
   )

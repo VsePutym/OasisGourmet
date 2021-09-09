@@ -16,6 +16,7 @@ const modalPhoneRef = useRef();
         )}
         <div className={s.menuItem} ref={modalPhoneRef} onClick={() => setHookModalPhone(modalPhoneRef)}>
           <img src={PhoneImg} alt=""/>
+          <p className={s.menuText}>Контакты</p>
         </div>
      </div>
   )

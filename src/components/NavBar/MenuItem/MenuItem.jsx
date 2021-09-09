@@ -6,7 +6,9 @@ const MenuItem = (props) => {
     <div>
         <NavLink to={props.hrefs} activeClassName={s.active} className={s.menuItem}>
           <img src={props.img} alt=""/>
+          <p className={s.menuText}>{props.name}</p>
         </NavLink>
+
     </div>
   )
 }

@@ -1,5 +1,5 @@
-import s from '../CardsMenu.module.scss'
-import HotMenuDB from '../../../DataBase/Kitchen/HotMenuDB'
+import s from '../CardsMenu.module.scss';
+import DessertsMenuDB from '../../../DataBase/Kitchen/DessertsMenuDB';
 import {useRef} from "react";
 import {zoomIn} from 'react-animations';
 import styled, {keyframes} from 'styled-components';
@@ -8,25 +8,32 @@ import {Context} from "../../../Functions/Context";
 
 const zoomInAnimation = keyframes`${zoomIn}`;
 
-const In = styled.div`
+const InDesserts = styled.div`
   animation: 1s ${zoomInAnimation};
 `;
 
 
-const HotDish = () => {
+const BG = styled.div`
+  background-image: url(${({img}) => img});
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 150px
+}`
+
+const Desserts = () => {
   const {getHookOpenItem: {setHookOpenItem}} = useContext(Context);
 
   const ref = useRef();
-  const hotDish = HotMenuDB.items;
+  const desserts = DessertsMenuDB.items;
 
   return (
     <div className={s.wrapper}>
-      <h2 className={s.maneTitle}>Горячие блюда</h2>
-      <In className={s.items}>
-        {hotDish.map(dish =>
+      {/*<div>Горячие блюда</div>*/}
+      <InDesserts className={s.items}>
+        {desserts.map(dish =>
           <div key={dish.id} className={s.item} ref={ref} onClick={() => setHookOpenItem(dish)}>
-            {/*<BG img={dish.img}/>*/}
-            <div className={s.img} style={{backgroundImage: `url(${dish.img})`}} />
+            <BG img={dish.img}/>
             <h4 className={s.title}>{dish.name}</h4>
             <div className={s.description}>
               <div><span className={s.cost}>Цена</span>{dish.price}р</div>
@@ -35,9 +42,9 @@ const HotDish = () => {
             </div>
           </div>
         )}
-      </In>
+      </InDesserts>
     </div>
   )
 }
 
-export default HotDish;
+export default Desserts;

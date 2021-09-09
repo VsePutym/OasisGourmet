@@ -23,6 +23,11 @@ import UseRegister from "./hooks/Auth/UseRegister";
 import UseUsersDB from "./hooks/UsersDB/UseUsersDB";
 import UserEnterEmailAndPassword from "./hooks/Auth/UserEnterEmailAndPassword";
 import {Context} from './Functions/Context';
+import ColdDish from "./components/Menu/ColdDish/ColdDish";
+import Snacks from "./components/Menu/Snacks/Snacks";
+import Desserts from "./components/Menu/Desserts/Desserts";
+import Pizza from "./components/Menu/Pizza/Pizza";
+import Panasia from "./components/Menu/Panasia/Panasia";
 
 
 const firebaseConfig = {
@@ -43,7 +48,7 @@ const App = () => {
   const getHookModalPhone = UseModalPhone();
   const getHookOpenItem = UseOpenItem();
   const getOrders = UseOrders();
-  // const database = firebase.database();
+  const database = firebase.database();
   const fireStore = firebase.firestore();
   const getAuth = UseAuth(firebase.auth)
   const UsersDb = UseUsersDB(getAuth.authentication, fireStore);
@@ -53,12 +58,17 @@ const App = () => {
 
 
   return (
-    <Context.Provider value={{getHookOpenItem, getOrders, getAuth, getRegister, UsersDb, getAuthEmailAndPassword}}>
+    <Context.Provider value={{getHookOpenItem, database, getOrders, getAuth, getRegister, UsersDb, getAuthEmailAndPassword}}>
     <div className="App">
       <Switch>
         <Route  path='/home' render={() => <Home />}/>
         <Route exact path='/menu'  render={() => <Menu />}/>
         <Route  path='/menu/hot' render={() => <HotDish />} />
+        <Route  path='/menu/cold' render={() => <ColdDish />} />
+        <Route  path='/menu/snacks' render={() => <Snacks />} />
+        <Route  path='/menu/desserts' render={() => <Desserts />} />
+        <Route  path='/menu/pizza' render={() => <Pizza />} />
+        <Route  path='/menu/panasia' render={() => <Panasia />} />
         <Route  path='/menu/wine' render={() => <Wine />}/>
         <Route  exact path='/user'  render={() => <User />}/>
         <Route  path='/cart'  render={() => <Cart />}/>

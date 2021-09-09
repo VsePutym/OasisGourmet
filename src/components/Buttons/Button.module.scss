@@ -7,6 +7,18 @@ $black: #282936;
 @mixin transition($property: all, $duration: 10s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
 }
+.maineOrders{
+  position: absolute;
+  bottom: 30px;
+  right: 20%;
+}
+@media (max-width: 500px) {
+  .maineOrders{
+    position: absolute;
+    bottom: 13%;
+    right: 0;
+  }
+}
 .maine{
   position: absolute;
   bottom: 30px;

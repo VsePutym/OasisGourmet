@@ -1,4 +1,4 @@
-const BreakfastMenuDB = {
+const PizzaMenuDB = {
   items: [
     {
       name: 'Пицца Маргарита', price: 490, weight: 365, id: 0, img: "../../images/HotDishes/1.jpg",
@@ -57,3 +57,5 @@ const BreakfastMenuDB = {
     },
   ]
 }
+
+export default PizzaMenuDB;

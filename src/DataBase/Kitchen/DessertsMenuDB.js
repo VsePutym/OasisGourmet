@@ -14,11 +14,11 @@ const DessertsMenuDB = {
       description: 'Савоярди, кофе чёрный, амаретто крем (маскарпоне, яйцо куриное, сахар, сливки 35%, ликёр Амаретто).'
     },
     {
-      name: 'Ломаная меренга с ягодами и мидалём', price: 590, weight: 235, id: 0, img: "../../images/HotDishes/1.jpg",
+      name: 'Ломаная меренга с ягодами и мидалём', price: 590, weight: 235, id: 3, img: "../../images/HotDishes/1.jpg",
       description: 'Меренга, клубника, малина, голубика, слайсы мендаля.'
     },
     {
-      name: 'Ломаная меренга с ягодами и мидалём', price: 590, weight: 235, id: 0, img: "../../images/HotDishes/1.jpg",
+      name: 'Ломаная меренга с ягодами и мидалём', price: 590, weight: 235, id: 4, img: "../../images/HotDishes/1.jpg",
       description: 'Меренга, клубника, малина, голубика, слайсы мендаля.'
     },
   ]

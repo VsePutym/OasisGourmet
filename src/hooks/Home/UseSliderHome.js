@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 
-const UseSlider = (startSlide) => {
+const UseSliderHome = (startSlide) => {
   const [hookNext, setHookNext] = useState(false);
   const [hookPrev, setHookPrev] = useState(false);
   const [count, setCount] = useState(1);
@@ -10,6 +10,7 @@ const UseSlider = (startSlide) => {
     const getOpacity = () => {
       arr.forEach(item => {
         item.style.opacity = '0';
+        item.style.display = 'none';
       })
     }
     getOpacity();
@@ -30,10 +31,11 @@ const UseSlider = (startSlide) => {
       setCount(3);
     }
     arr[count].style.opacity = '1'
+    arr[count].style.display = 'block'
 
   }, [hookPrev, hookNext, setCount, count]);
 
   return {hookPrev, setHookPrev, hookNext, setHookNext, count}
 }
 
-export default UseSlider;
+export default UseSliderHome;

@@ -6,7 +6,13 @@ import UseMenuBar from "../../hooks/Menu/UseMenuBar";
 import UseMenuKitchen from "../../hooks/Menu/UseMenuKitchen";
 import Kitchen from "./Kitchen";
 import Bar from "./Bar";
+import styled, {keyframes} from "styled-components";
+import {slideInDown} from "react-animations";
 
+const animationBounceInDown = keyframes`${slideInDown}`;
+const BounceInDown = styled.div`
+  animation: 1s ${animationBounceInDown};
+`;
 
 const Menu = () => {
 
@@ -26,9 +32,9 @@ const Menu = () => {
 
 
   return (
-    <div className={s.wrapper}>
+    <BounceInDown className={s.wrapper}>
 
-      <Kitchen ref={refKitchen} >
+    <Kitchen ref={refKitchen} >
         <div ref={showMenuKitchen} className={s.itemsK}>
           {menuKitchen.map(item =>
             <div key={item.id} className={s.items}>
@@ -50,7 +56,7 @@ const Menu = () => {
         </div>
       </Bar>
 
-    </div>
+    </BounceInDown>
   )
 }
 

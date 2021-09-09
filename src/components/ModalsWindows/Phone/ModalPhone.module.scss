@@ -1,15 +1,25 @@
 .modalPhone{
     content: "";
-    background-color: black;
+    text-align: center;
+    background-color: white;
     position: absolute;
     z-index: 100;
     right: 40%;
     left: 40%;
     transform: rotateY(50%);
     top: 30%;
-    width: 200px;
+    width: 400px;
     height: 300px;
     margin: 0 auto;
+    border: 1px solid #282936;
+    border-radius: 20px;
+    overflow: hidden;
+    h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #282936;
+        color: white;
+    }
 }
 .wrapper{
     content: "";

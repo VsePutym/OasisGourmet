@@ -6,7 +6,7 @@ const WineDB = {
     {name: 'nv laurent-perrier brut la cuvee, champagne, France /', nameRus: 'Пино Нуар, Шардоне, Пино Менье', price: '9000', id:3, weight: '0,750'}
   ],
   white:[
-    {name: 'varzea do marao, calcada, vinho verde, Portugal /', nameRus: 'Аринту, Лоурейру, Азал, Тражадура', weight: '0,750', price: '3000', id:0},
+    {name: 'varzea do marao, calcada, vinho verde, Portugal /', nameRus: 'Аринту, Лоурейру, Азал, Тражадура', weight: '0,750', price: 3000, id:0},
     {name: 'campogrande orvieto classico, antinori, umbria, Italy /', nameRus: 'Грекето, Проканико', weight: '0,125/0,750', price: '750/3300', id:1},
     {name: '"DR.L" Riesling qualitaswein Semi-sweet .DR. Loosen, Germany /', nameRus: 'Рислинг', weight: '0,125/0,750', price: '650/3900', id:2},
     {name: 'Mud house sauvignon Blanc, marlborough, New Zealand /', nameRus: 'Совиньон Блан', weight: '0,125/750', price: '600/3600', id:3},

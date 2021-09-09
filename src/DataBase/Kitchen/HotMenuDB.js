@@ -1,3 +1,6 @@
+import beff from '../../images/MaineMenu/HotDishes/2.jpg';
+// import beff2 from '../../../public/images/HotDishes/2.jpg';
+
 const HotMenuDB = {
    items: [
      {name: 'Стейк скёрт', price : 1100, weight: 216, id: 0, img: "../../images/HotDishes/1.jpg",
@@ -30,7 +33,7 @@ const HotMenuDB = {
      {name: 'Стейк стриплойн', price : 2590, weight: 310, id: 7, img: "../../images/HotDishes/1.jpg",
        description: ''
      },
-     {name: 'Бифстроганов с картофельным пюре', price : 990, weight: 345, id: 8, img: "../../images/HotDishes/1.jpg",
+     {name: 'Бифстроганов с картофельным пюре', price : 990, weight: 345, id: 8, img: `${beff}`,
        description: 'Обжаренная говяжья вырезка, белые грибы, репчатый лук, сливки, соус, демигляс, чеснок томатная паста,' +
          'соль, перец - туш'
      },
@@ -47,10 +50,10 @@ const HotMenuDB = {
      {name: 'Медальоны с картофельным пюре', price : 1290, weight: 354, id: 12, img: "../../images/HotDishes/1.jpg",
        description: 'Филе миньон, картофельное пюре, кофейный соус (кофе, соус демигляс, трюфельная паста)'
      },
-     {name: 'Фаршированный болгарский перец с копченой сметаной', price : 790, weight: 400, id: 13, img: "../../images/HotDishes/1.jpg",
+     {name: 'Фаршированный болгарский перец', price : 790, weight: 400, id: 13, img: "../../images/HotDishes/1.jpg",
        description: ''
      },
-     {name: 'Фирменый Бургер с котлетой из мраморной говядины', price : 1290, weight: 620, id: 8, img: "../../images/HotDishes/1.jpg",
+     {name: 'Фирменый Бургер с котлетой из мраморной говядины', price : 1290, weight: 620, id: 14, img: "../../images/HotDishes/1.jpg",
        description: 'Булочка бриошь, котлетка из мраморной говядины, фирминный соус(майонез 67%, чепотоле, кетчуп, чили, кинза), томаты, огурцы, лук красный, солат ромейн, чеддр,' +
          'гочица. Подаётся с картофелем фри и фирменным соусе.'
      },

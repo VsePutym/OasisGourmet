@@ -2,31 +2,134 @@
   overflow: hidden;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .title {
   text-align: center;
-  padding: 70px 50px;
-  background-color: #282936;
-  color: white;
-}
+  background-color: white;
+  p {
+    padding: 30px 50px;
+  }
 
-.Sheff {
-  text-align: center;
-  border: 20px solid #282936;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  background-color: #282936;
-  color: white;
-  img{
-    width: 150px;
-    border-radius: 50%;
+  h1 {
+    padding-top: 20px;
   }
 }
 
+.overlay {
+  content: "";
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  height: 40vh;
+  opacity: 0.7;
+}
 
+.trues {
+  padding-top: 20px;
+}
 
+.Sheff {
+padding: 30px 150px;
+  display: flex;
+  justify-content: end;
+  color: white;
+  background-color: #282936;
+
+  p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 16px;
+    max-width: 900px;
+    padding-left: 30px;
+  }
+
+  img {
+    border-radius: 50%;
+    margin-left: 100px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .quotes {
+    width: 10px;
+
+  }
+}
+
+.Bar {
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  color: white;
+  background-color: #282936;
+
+  img {
+    border-radius: 50%;
+    width: 150px;
+  }
+
+  p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 16px;
+    max-width: 900px;
+    padding-left: 30px;
+  }
+}
+
+.Wine{
+  background-color: white;
+  height: 500px;
+}
+.solaia{
+  position: relative;
+  h1{
+    padding-left: 30px;
+    color: #d97c67;
+    font-size: 100px;
+  }
+  img{
+    border-bottom: 2px solid #d97c67;
+    padding-left: 30px;
+    width: 220px;
+    position: absolute;
+    top: -150px;
+    right: 10%;
+  }
+  p{
+    width: 70%;
+    padding: 30px;
+    font-size: 16px;
+  }
+}
+.solaiaDescription{
+  display: flex;
+}
+.KoravinInfo,
+.EggInfo{
+  position: absolute;
+  margin-left: 20px;
+}
+.KoravinTitle,
+.EggTitle{
+  padding-bottom: 30px;
+}
+.mapInfo{
+  margin-top: 30px;
+  display: flex;
+  iframe{
+    max-width: 700px;
+    width: 100%;
+    height: 300px;
+    border: 2px solid #282936;
+    border-radius: 20px;
+  }
+}
+.mapDescription{
+  width: 40%;
+  transform: translateY(40%);
+  padding-right: 30px;
+  padding-left: 30px;
+}
 
 

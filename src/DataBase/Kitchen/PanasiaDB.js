@@ -1,4 +1,4 @@
-const PanAsiaDB = {
+const PanasiaDB = {
   items: [
     {
       name: 'Сашами с лососем', price: 590, weight: 60, id: 0, img: "../../images/HotDishes/1.jpg",
@@ -93,4 +93,4 @@ const PanAsiaDB = {
   ]
 }
 
-export default PanAsiaDB;
+export default PanasiaDB;
