@@ -14,7 +14,6 @@ const Interior = () => {
 
   const startSlide = useRef();
   const moveSlide = UseSlider(startSlide);
-  // const name = 'Вперёд'
 
   return (
     <div className={s.sliderInterior}>

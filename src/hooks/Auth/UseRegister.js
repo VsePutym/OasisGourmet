@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import firebase from "firebase";
 
 const UseRegister = (firestore) => {
+
   const [hookRegister, setHookRegister] = useState(null);
 
    useEffect(() => {
@@ -20,7 +21,7 @@ const UseRegister = (firestore) => {
          firestore.collection('Users').doc(userUID).set({
            email: hookRegister.email,
            name: hookRegister.name,
-           secondName: hookRegister.secondName,
+           surname: hookRegister.surname,
            password: hookRegister.password,
            phone: hookRegister.phone,
            address: hookRegister.address,

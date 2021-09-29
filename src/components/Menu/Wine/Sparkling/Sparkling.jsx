@@ -15,14 +15,13 @@ const Sparkling = ({setHookOpenItem}) => {
       <div className={s.items}>
         {sparklingDB.map(item =>
           <div key={item.id} className={s.item} onClick={() => setHookOpenItem(item)}>
-            <p className={s.Fonts}>{item.name}</p>
-            <p className={s.rusName}>{item.nameRus}</p>
+            <p className={s.name}>{item.name}</p>
+            <span className={s.openItem}>Подробнее</span>
             <p className={s.weight}>{item.weight} <span>ml</span></p>
             <p className={s.price}>{item.price} <span>р</span></p>
           </div>
         )}
       </div>
-      <div className={s.border} />
     </div>
   )
 }

@@ -26,20 +26,23 @@ if(iOS === false){
     opacity: 0.5;
   }
   h1{
-    right: 40%;
+    width: 300px;
+    right: 0;
+    left: 0;
     top: 30%;
     margin: 0 auto;
     position: absolute;
     color: white;
     font-size: 70px;
   }
-  @media(max-width: 500px){
-    height: 60vh;
+  @media(max-width: 520px){
+    height: 30vh;
     ::before{
-      height: 60vh;
+      height: 30vh;
     }
     h1{
-      padding-left: 15px;
+      left: 10%;
+      width: 200px;
       font-size: 40px;
     }
   }
@@ -66,20 +69,23 @@ if(iOS === false){
     opacity: 0.5;
   }
   h1{
-    right: 40%;
-    top: 30%;
+    width: 300px;
+    display: block;
+    right: 0;
+    left: 0;
     margin: 0 auto;
+    top: 30%;
     position: absolute;
     color: white;
     font-size: 70px;
   }
-  @media(max-width: 500px){
+  @media(max-width: 520px){
     height: 60vh;
     ::before{
       height: 60vh;
     }
     h1{
-      padding-left: 15px;
+      width: 200px;
       font-size: 40px;
     }
   }

@@ -1,6 +1,6 @@
 import s from './Wine.module.scss';
-import WineBG from '../../../images/MaineMenu/WineCart/WineBG.jpg'
-import wine from '../../../images/MaineMenu/WineCart/wineCircle.png'
+import WineBG from '../../../images/MaineMenu/WineBG.jpg'
+import wine from '../../../images/MaineMenu/wineCircle.png'
 import Sparkling from "./Sparkling/Sparkling";
 import White from "./White/White";
 import styled, {keyframes} from "styled-components";
@@ -19,17 +19,17 @@ const Zoom = styled.div`
 `;
 
 const Wine = () => {
-  const {getHookOpenItem: {setHookOpenItem}} = useContext(Context);
+  const {getHookOpenItemBar: {setHookOpenItemBar}} = useContext(Context);
 
   return (
     <div className={s.container}>
       <div className={s.BG} style={{backgroundImage: `url(${WineBG})`}}>
         <Zoom><h1>Wine list</h1></Zoom>
       </div>
-      <Sparkling setHookOpenItem={setHookOpenItem} />
-      <White setHookOpenItem={setHookOpenItem} />
+      <Sparkling setHookOpenItem={setHookOpenItemBar} />
+      <White setHookOpenItem={setHookOpenItemBar} />
       <div className={s.img}>
-        <div className={s.name}> italy <span>&</span> co</div>
+        <div className={s.Fonts}> italy <span>&</span> co</div>
         <img src={wine} className={s.wineCircle} alt=""/>
       </div>
     </div>

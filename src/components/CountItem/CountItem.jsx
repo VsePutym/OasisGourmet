@@ -12,7 +12,7 @@ const CountItem = ({hookCountItem, setHookCountItem, onChange}) => {
 
   return(
     <div className={s.totalCount}>
-      <p className={s.titleCount}>Колличество</p>
+      <p>Колличество</p>
       <div>
         <button disabled={hookCountItem <= 1} className={s.btnCountMinus} onClick={minusCount}>-</button>
         <input type="number" min='1' max='10' className={s.inputCount} value={hookCountItem < 1 ? 1 : hookCountItem} onChange={onChange}/>

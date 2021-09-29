@@ -8,16 +8,8 @@ $black: #282936;
   transition: $property $duration $ease;
 }
 .maineOrders{
-  position: absolute;
-  bottom: 30px;
-  right: 20%;
-}
-@media (max-width: 500px) {
-  .maineOrders{
-    position: absolute;
-    bottom: 13%;
-    right: 0;
-  }
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .maine{
   position: absolute;

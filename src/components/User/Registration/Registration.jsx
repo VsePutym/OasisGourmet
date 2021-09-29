@@ -10,7 +10,7 @@ const Registration = ({setHookRegister}) => {
 const phoneValid = /8[-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/gm;
   const fullRegistration = yup.object().shape({
     name: yup.string().typeError('Должно быть числом').required('Обязательное поле'),
-    secondName: yup.string().typeError('Должно быть строкой').required('Обязательное поле'),
+    surname: yup.string().typeError('Должно быть строкой').required('Обязательное поле'),
     password: yup.string().typeError('Должно быть строкой').required('Обязательное поле'),
     address: yup.string().typeError('Должно быть строкой').required('Обязательное поле'),
     confirmPassword: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают').required('Обязательное поле'),
@@ -33,7 +33,7 @@ const phoneValid = /8[-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/gm;
           <Formik
             initialValues={{
               name: '',
-              secondName: '',
+              surname: '',
               password: '',
               confirmPassword: '',
               email: '',
@@ -66,12 +66,12 @@ const phoneValid = /8[-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/gm;
                   <input
                     className={'input'}
                     type={'text'}
-                    name={'secondName'}
+                    name={'surname'}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.secondName}
+                    value={values.surname}
                   />
-                </p>{touched.secondName && errors.secondName && <p className={s.error}>{errors.secondName}</p>}
+                </p>{touched.surname && errors.surname && <p className={s.error}>{errors.surname}</p>}
                 <p className={s.inputForm}>
                   <label className={s.inputTitle}>Пароль</label>
                   <input
@@ -109,7 +109,7 @@ const phoneValid = /8[-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/gm;
                 </p>
                 {touched.email && errors.email && <p className={s.error}>{errors.email}</p>}
                 <p className={s.inputForm}>
-                  <label className={s.inputTitle}>Phone</label>
+                  <label className={s.inputTitle}>Номер телефона</label>
                   <input
                     className={'input'}
                     type={'tel'}
@@ -121,7 +121,7 @@ const phoneValid = /8[-(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/gm;
                 </p>
                 {touched.phone && errors.phone && <p className={s.error}>{errors.phone}</p>}
                 <p className={s.inputForm}>
-                <label className={s.inputTitle}>Адресс</label>
+                <label className={s.inputTitle}>Адресс доставки</label>
                 <input
                   className={'input'}
                   type={'text'}

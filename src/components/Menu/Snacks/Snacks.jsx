@@ -13,14 +13,6 @@ const InSnacks = styled.div`
 `;
 
 
-const BG = styled.div`
-  background-image: url(${({img}) => img});
-  background-size: cover;
-  background-position: center;
-  width: 400px;
-  height: 150px
-}`
-
 const Snacks = () => {
   const {getHookOpenItem: {setHookOpenItem}} = useContext(Context);
 
@@ -29,11 +21,11 @@ const Snacks = () => {
 
   return (
     <div className={s.wrapper}>
-      {/*<div>Горячие блюда</div>*/}
+      <h2 className={s.maneTitle}>Закуски</h2>
       <InSnacks className={s.items}>
         {snacks.map(dish =>
           <div key={dish.id} className={s.item} ref={ref} onClick={() => setHookOpenItem(dish)}>
-            <BG img={dish.img}/>
+            <div className={s.img} style={{backgroundImage: `url(${dish.img})`}} />
             <h4 className={s.title}>{dish.name}</h4>
             <div className={s.description}>
               <div><span className={s.cost}>Цена</span>{dish.price}р</div>

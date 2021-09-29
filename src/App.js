@@ -10,7 +10,6 @@ import "firebase/firestore";
 import {Route, Switch } from "react-router-dom";
 import User from "./components/User/User";
 import Cart from "./components/Cart/Cart";
-import Exit from "./components/Exit/Exit";
 import AboutUs from "./components/AboutUs/AboutUs";
 import HotDish from "./components/Menu/HotDish/HotDish";
 import ModalPhone from "./components/ModalsWindows/Phone/ModalPhone";
@@ -28,6 +27,16 @@ import Snacks from "./components/Menu/Snacks/Snacks";
 import Desserts from "./components/Menu/Desserts/Desserts";
 import Pizza from "./components/Menu/Pizza/Pizza";
 import Panasia from "./components/Menu/Panasia/Panasia";
+import Invents from "./components/Home/Invents/Invents";
+import UserChange from "./hooks/Auth/UserChange";
+import {UseOpenItemBar} from "./hooks/Menu/UseOpenItemBar";
+import ModalBar from "./components/ModalsWindows/ModalBar/ModalBar";
+import Cocktail from "./components/Menu/Cocktail/Cocktail";
+import Tea from "./components/Menu/Tea/Tea";
+import StrongAlcohol from "./components/Menu/StrongAlcohol/StrongAlcohol";
+import Bear from "./components/Menu/Bear/Bear";
+import SoftDrinks from "./components/Menu/SoftDrinks/SoftDrinks";
+
 
 
 const firebaseConfig = {
@@ -47,6 +56,7 @@ const App = () => {
 
   const getHookModalPhone = UseModalPhone();
   const getHookOpenItem = UseOpenItem();
+  const getHookOpenItemBar = UseOpenItemBar();
   const getOrders = UseOrders();
   const database = firebase.database();
   const fireStore = firebase.firestore();
@@ -54,11 +64,13 @@ const App = () => {
   const UsersDb = UseUsersDB(getAuth.authentication, fireStore);
   const getRegister = UseRegister(fireStore ,getAuth.authentication);
   const getAuthEmailAndPassword = UserEnterEmailAndPassword(firebase.auth);
+  const getUserChange = UserChange(getAuth.authentication, fireStore)
+
 
 
 
   return (
-    <Context.Provider value={{getHookOpenItem, database, getOrders, getAuth, getRegister, UsersDb, getAuthEmailAndPassword}}>
+    <Context.Provider value={{getHookOpenItemBar, getUserChange, getHookOpenItem, database, getOrders, getAuth, getRegister, UsersDb, getAuthEmailAndPassword}}>
     <div className="App">
       <Switch>
         <Route  path='/home' render={() => <Home />}/>
@@ -70,15 +82,21 @@ const App = () => {
         <Route  path='/menu/pizza' render={() => <Pizza />} />
         <Route  path='/menu/panasia' render={() => <Panasia />} />
         <Route  path='/menu/wine' render={() => <Wine />}/>
+        <Route  path='/menu/cocktail' render={() => <Cocktail />}/>
+        <Route  path='/menu/tea' render={() => <Tea />}/>
+        <Route  path='/menu/noAlcohol' render={() => <SoftDrinks />}/>
+        <Route  path='/menu/strongAlcohol' render={() => <StrongAlcohol />}/>
+        <Route  path='/menu/lightAlcohol' render={() => <Bear />}/>
         <Route  exact path='/user'  render={() => <User />}/>
         <Route  path='/cart'  render={() => <Cart />}/>
-        <Route  path='/exit'  render={() => <Exit />}/>
         <Route  path='/aboutUs'  render={() => <AboutUs />}/>
+        <Route  path='/Invents'  render={() => <Invents />}/>
         <Route render={() => <Home />}/>
       </Switch>
       <NavBar {...getHookModalPhone}/>
       {getHookModalPhone.hookModalPhone && <ModalPhone {...getHookModalPhone} />}
       {getHookOpenItem.hookOpenItem && <ModalFood {...getHookOpenItem} {...getOrders} />}
+      {getHookOpenItemBar.hookOpenItemBar && <ModalBar {...getHookOpenItemBar} />}
     </div>
     </Context.Provider>
   );

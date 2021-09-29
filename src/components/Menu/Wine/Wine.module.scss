@@ -1,20 +1,15 @@
-//font-family: 'Pattaya', sans-serif;
-//font-family: 'Oswald', sans-serif;
-//font-family: 'Pinyon Script', cursive;
-
-
 .container {
   text-align: center;
 }
 
 .BG {
   height: 400px;
-  font-family: 'Pinyon Script', cursive;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
   color: white;
   font-size: 50px;
+  text-align: center;
   h1{
     text-shadow: 27px 20px 4px black;
   }
@@ -23,54 +18,69 @@
 .title{
   display: flex;
   justify-content: center;
+  border-top: 2px solid #d97c67;
   h1{
     font-family: 'Pinyon Script', cursive;
+    font-weight: 400;
   }
   span{
     padding-top: 10px;
     padding-left: 10px;
   }
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 .item{
+  cursor: pointer;
   padding-top: 20px;
   font-size: 16px;
   display: grid;
   grid-template-areas: 'a b c d';
-  grid-template-columns: 13fr 9fr 5fr 5fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 .Fonts{
   font-family: 'Pinyon Script', cursive;
-  font-size: 20px;
+  bottom: 20%;
+  font-size: 70px;
+  right: -8%;
   font-weight: 500;
-  grid-area: a;
+  z-index: 5;
+  max-width: 300px;
+
 }
-.rusName{
+.openItem{
   grid-area: b;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: #282936;
+  padding: 5px;
+  color: white;
+  text-align: center;
 }
+
 .weight{
   grid-area: c;
 }
-.border{
-  max-width: 300px;
-  height: 1px;
-  background-color: #282936;
-  margin: 50px auto 0;
+.name{
+  grid-area: a;
+  text-align: start;
 }
+
 .price{
   grid-area: d;
 }
 .items{
   padding-left: 100px;
   padding-right: 100px;
+  margin-bottom: 30px;
 }
 .img{
   display: block;
   height: 300px;
   position: relative;
 }
-.name,
+.Fonts,
 .wineCircle{
   position: absolute;
   bottom: 0;
@@ -79,14 +89,6 @@
   margin:  0 auto;
 }
 
-.name{
-  font-family: 'Pinyon Script', cursive;
-  bottom: 20%;
-  font-size: 70px;
-  right: -8%;
-  font-weight: 500;
-  z-index: 5;
-}
 .wineCircle{
   z-index: 3;
   width: 400px;

@@ -3,9 +3,9 @@ import Authorization from "./Authorization/Authorization";
 import AuthSuccess from "./AuthSuccess";
 import {Context} from "../../Functions/Context";
 import styled, {keyframes} from "styled-components";
-import {bounceInDown} from "react-animations";
+import {slideInDown} from "react-animations";
 
-const animationBounceInDown = keyframes`${bounceInDown}`;
+const animationBounceInDown = keyframes`${slideInDown}`;
 const BounceInDown = styled.div`
   animation: 1s ${animationBounceInDown};
 `;
@@ -15,14 +15,14 @@ const User = React.memo(() => {
     getAuth: {authentication, logOut},
     getRegister: {setHookRegister},
     UsersDb: {hookDb},
-    getAuthEmailAndPassword: {setUserEnter}
+    getAuthEmailAndPassword: {setUserEnter, ErrorEnter}
   } = useContext(Context);
 
   return (
     <BounceInDown>
       {authentication && hookDb
         ? <AuthSuccess hookDb={hookDb} logOut={logOut}/>
-        : <Authorization setHookRegister={setHookRegister} setUserEnter={setUserEnter}/>
+        : <Authorization ErrorEnter={ErrorEnter} setHookRegister={setHookRegister} setUserEnter={setUserEnter}/>
       }
     </BounceInDown>
   )

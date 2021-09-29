@@ -16,7 +16,7 @@
   img{
     position: absolute;
     bottom: 5%;
-    right: 5%;
+    right: 0;
     width: 200px;
     z-index: 5;
     left: 0;
@@ -29,14 +29,14 @@
   border-radius: 20px;
   background-color: #282936;
   margin: 80px auto;
-  max-width: 500px;
+  max-width: 800px;
   width: 100%;
   z-index: 5;
-  right: 5%;
+  right: 0;
   left: 0;
-  //border: 2px solid #282936;
   box-shadow: 10px 5px 5px black;
   overflow: hidden;
+  font-size: 16px;
 }
 .bg{
   background-color: white;
@@ -61,8 +61,6 @@
 .title{
   background-color: #282936;
   color: white;
-  //border-radius: 20px;
-  //width: 110%;
   p{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -73,10 +71,35 @@
   padding-top: 20px;
 }
 .logOutAndChange{
-  padding-top: 30px;
+  button{
+    color: white;
+    background-color: #282936;
+    font-size: 16px;
+    border: 2px solid #282936;
+    border-radius: 20px;
+    padding: 5px 20px 10px 20px;
+    margin-bottom: 30px;
+  }
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
 .btnLogOut{
-  padding-right: 50px;
+  margin-right: 50px;
+}
+@media (max-width: 430px) {
+  .UserInfo{
+    top: -10%;
+  }
+}
+
+@media (max-width: 990px) {
+  .UserInfo{
+    width: 95%;
+  }
+  .container {
+    img{
+      bottom: 15%;
+    }
+  }
 }

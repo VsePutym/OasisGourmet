@@ -9,7 +9,6 @@ const Kitchen = styled.div`
   width: 50%;
   background-position: center;
   height: 100vh;
-  overflow: hidden;
   border-right: 2px solid  #d97c67;
   &:after {
     width: 50%;

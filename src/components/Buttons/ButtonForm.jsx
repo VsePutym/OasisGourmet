@@ -1,8 +1,6 @@
 import s from './ButtonForm.module.scss';
 import React from 'react';
 
-
-
 const ButtonForm = React.memo((props) => {
 
   return (

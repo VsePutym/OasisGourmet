@@ -34,22 +34,25 @@ const Menu = () => {
   return (
     <BounceInDown className={s.wrapper}>
 
-    <Kitchen ref={refKitchen} >
+      <Kitchen ref={refKitchen}>
         <div ref={showMenuKitchen} className={s.itemsK}>
-          {menuKitchen.map(item =>
-            <div key={item.id} className={s.items}>
-              <Link to={item.href} className={s.item}>{item.name}</Link>
+            <div className={s.wrapperItems}>
+              {menuKitchen.map(itemK =>
+                <div key={itemK.id} className={s.items}>
+                  <Link to={itemK.href} className={s.item}>{itemK.name}</Link>
+                </div>
+              )}
             </div>
-          )}
+
           <h1 ref={titleKitchen} className={s.titleChildrenMenu}>Меню</h1>
         </div>
       </Kitchen>
 
       <Bar ref={refBar}>
         <div ref={showMenuBar} className={s.itemsB}>
-          {menuBar.map(item =>
-            <div key={item.id} className={s.items}>
-              <Link to={item.href} className={s.item}>{item.name}</Link>
+          {menuBar.map(itemB =>
+            <div key={itemB.id} className={s.items}>
+              <Link to={itemB.href} className={s.item}>{itemB.name}</Link>
             </div>
           )}
           <h1 ref={titleBar} className={s.titleChildrenMenu}>Бар</h1>

@@ -1,9 +1,7 @@
 import {useEffect, useState} from "react";
 
 const UseUsersDB = (authentication, fireStore) => {
-
   const [hookDb, setHookDb] = useState(null);
-
   useEffect(() => {
     if(authentication !== null){
       fireStore.collection("Users").get().then((querySnapshot) => {
@@ -17,8 +15,6 @@ const UseUsersDB = (authentication, fireStore) => {
     }
   },[authentication])
 
-
   return {hookDb};
 }
-
 export default UseUsersDB;

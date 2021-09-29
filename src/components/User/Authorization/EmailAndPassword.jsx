@@ -9,7 +9,7 @@ import ModalResetPassword from "../../ModalsWindows/ResetPassword/ModalRestPassw
 
 
 
-const EmailAndPassword = ({setUserEnter}) => {
+const EmailAndPassword = ({setUserEnter, ErrorEnter}) => {
 
   const validEmailAndPassword = yup.object().shape({
     password: yup.string().typeError('Должно быть строкой').required('Обязательно'),
@@ -65,6 +65,7 @@ const EmailAndPassword = ({setUserEnter}) => {
                   />
                 </p>
                 {touched.email && errors.email && <p className={'error'}>{errors.email}</p>}
+                {ErrorEnter && <p className={s.ErrorEnter}>Неверный логин или пароль</p>}
                 <ButtonEnter isValid={isValid} handleSubmit={handleSubmit} mail={imgBtnRegister} name={buttonRegister} />
               </div>
             )}

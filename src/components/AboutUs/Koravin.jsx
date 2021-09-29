@@ -13,7 +13,7 @@ if(iOS === false){
   background-size: cover;
   width: 100%;
   background-position: center;
-  height: 50vh;
+    height: 500px;
   overflow: hidden;
   color: white;
   background-attachment: fixed ;
@@ -22,7 +22,7 @@ if(iOS === false){
   ::before{
     content: "";
     width: 100%;
-    height: 50vh;
+    height: 500px;
     background-color: black;
     position: absolute;
     top: 0;
@@ -39,22 +39,29 @@ if(iOS === false){
   .EggTitle{
     padding-bottom: 130px;
   }
-  
-  @media(max-width: 500px){
-    height: 60vh;
-    ::before{
-      height: 60vh;
+
+    @media (max-width: 990px) {
+      p {
+        width: 95%;
+        font-size: 14px;
+      }
     }
-    h1{
-      padding-left: 15px;
-      font-size: 40px;
+    @media (max-width: 660px) {
+      h1 {
+        font-size: 40px;
+      }
+
     }
-    p{
-      width: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
+    @media (max-width: 500px) {
+      h1 {
+        padding-top: 0;
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
-  }
 `
 } else {
   KoravinStyle = styled.div`
@@ -63,7 +70,7 @@ if(iOS === false){
   background-size: cover;
   width: 100%;
   background-position: center;
-  height: 40vh;
+  height: 500px;
   overflow: hidden;
   color: white;
   background-attachment: scroll ;
@@ -72,7 +79,7 @@ if(iOS === false){
   ::before{
     content: "";
     width: 100%;
-    height: 40vh;
+    height: 500px;
     background-color: black;
     position: absolute;
     top: 0;
@@ -89,22 +96,29 @@ if(iOS === false){
   .EggTitle{
     padding-bottom: 130px;
   }
-  
-  @media(max-width: 500px){
-    height: 60vh;
-    ::before{
-      height: 60vh;
+
+    @media (max-width: 990px) {
+      p {
+        width: 95%;
+        font-size: 14px;
+      }
     }
-    h1{
-      padding-left: 15px;
-      font-size: 40px;
+    @media (max-width: 660px) {
+      h1 {
+        font-size: 40px;
+      }
+
     }
-    p{
-      width: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
+    @media (max-width: 500px) {
+      h1 {
+        padding-top: 0;
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
-  }
 `
 }
 

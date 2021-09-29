@@ -11,6 +11,12 @@ import {bounceInRight, bounceInLeft} from "react-animations";
 import BGItaly from "./BGItaly";
 import BigGreenEgg from "./BigGreenEgg";
 import Koravin from "./Koravin";
+import logoOasis from '../../images/aboutUs/info/noroot.webp';
+import logoRepino from '../../images/aboutUs/info/LogoRepino.png';
+import visa from '../../images/aboutUs/info/visa.svg'
+import jcb from '../../images/aboutUs/info/jcb.svg'
+import mir from '../../images/aboutUs/info/mir.svg'
+import mastercard from '../../images/aboutUs/info/mastercard.svg'
 
 
 const animateZoom = keyframes`${bounceInRight}`;
@@ -99,6 +105,17 @@ const AboutUs = () => {
           <p>Номер Телефона: <a href='tel:89214333231'>89214333231</a></p>
           <p>Режим работы: ежедневно с 10:00 до 23:00</p>
           <p>Режим доставки: c 12:00 до 22:30</p>
+          <p>Минимальный заказ на доставку 1000р</p>
+          <div className={s.logos}>
+            <img className={s.logoRepino} src={logoRepino} alt=""/>
+            <img className={s.logoOasis} src={logoOasis} alt=""/>
+          </div>
+          <div className={s.payEat}>
+            <img src={mastercard} alt=""/>
+            <img className={s.visa} src={visa} alt=""/>
+            <img src={mir} alt=""/>
+            <img className={s.jcb} src={jcb} alt=""/>
+          </div>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2774210763237!2d29.916988214543828!3d60.194987300000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4697ad26ca4d9f25%3A0x6d90be2055d1a6b!2z0KDQtdC_0LjQvdGB0LrQvtC1!5e0!3m2!1sru!2sru!4v1630947580236!5m2!1sru!2sru"

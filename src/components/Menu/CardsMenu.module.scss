@@ -30,12 +30,10 @@
 }
 
 .items{
-    //overflow: auto;
     display: grid;
     grid-template-areas: 'a b c';
-    margin-top: 50px;
-    padding-left: 70px;
-    padding-right: 70px;
+padding: 50px 70px;
+    margin-bottom: 50px;
     height: 100vh;
 }
 
@@ -64,10 +62,29 @@
     width: 400px;
     height: 150px
 }
+@media screen and (max-width: 1440px) {
+    .items {
+        grid-template-areas: 'a b';
+    }
+}
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 970px) {
     .items {
         display: block;
+        padding-left: 130px;
+        padding-right: 130px;
+        width: 100%;
+    }
+    .item{
+        max-width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .items {
         padding-left: 20px;
         padding-right: 20px;
     }

@@ -1,14 +1,14 @@
 import s from './Home.module.scss';
 import BackGround from '../../images/Home/Background.jpg'
 import styled, {keyframes} from 'styled-components';
-import {bounceInDown, zoomIn} from 'react-animations';
+import {slideInDown, zoomIn} from 'react-animations';
 import React, {useEffect} from "react";
 import Oasis from '../../images/Home/noroot.png';
 import Preloader from "../../Rpeloader/Preloader";
 import UsePreloader from "../../hooks/Home/UsePreloader";
 import insta from '../../images/Home/icon/instagram.svg'
 import Facebook from '../../images/Home/icon/facebook.svg'
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 const animateZoom = keyframes`${zoomIn}`;
@@ -16,7 +16,7 @@ const Zoom = styled.div`
   animation: 5s ${animateZoom};
 `;
 
-const animationBounceInDown = keyframes`${bounceInDown}`;
+const animationBounceInDown = keyframes`${slideInDown}`;
 const BounceInDown = styled.div`
   animation: 1s ${animationBounceInDown};
 `;
@@ -47,9 +47,9 @@ const Home = () => {
         ? <BounceInDown>
           <MaineBG>
             <div className={s.mainInfo}>
-              <div className={s.left}>Заказать банкет</div>
-              <div className={s.left}>События и акции</div>
-              <div className={s.left}>Оформить клубную карту</div>
+              <NavLink to='Invents' className={s.left}>Заказать банкет</NavLink>
+              <NavLink to='Invents' className={s.left}>События и акции</NavLink>
+              <NavLink to='Invents' className={s.left}>Оформить клубную карту</NavLink>
             </div>
             <div className={s.social}>
               <a href='https://www.instagram.com/oasis_gourmet/' className={s.instagram}>

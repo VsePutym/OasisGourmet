@@ -17,7 +17,7 @@ const UseMenuKitchen = (ref, item, title) => {
       countPlus++;
       itemValue.style.transform = `translateY(${countPlus * 3}%)`;
       changeTitle.style.color = '#d97c67';
-      if(countPlus > 0){
+      if(countPlus > -3){
         cancelAnimationFrame(menuIntervalPlus);
       }
     };
@@ -27,7 +27,7 @@ const UseMenuKitchen = (ref, item, title) => {
       countMinus--;
       itemValue.style.transform = `translateY(${countMinus * 3}%)`;
       changeTitle.style.color = '#ffff';
-      if(countMinus < -23){
+      if(countMinus < -30){
         cancelAnimationFrame(menuIntervalMinus);
       }
     };

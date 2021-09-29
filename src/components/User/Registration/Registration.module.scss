@@ -22,16 +22,21 @@
   background-color: #282936;
   height: 100%;
 }
-
+.wrapperChangeUser{
+  background-color: #282936;
+  height: 100vh;
+}
 .titleInfo{
-  padding-top: 30px;
-  padding-bottom: 30px;
+padding: 30px;
   border-bottom: 1px solid #282936;
+}
+.ErrorEnter{
+  margin: 20px;
 }
 .inputForm{
   display: grid;
   grid-template-areas: 'a b';
-  padding: 20px 70px 20px 70px;
+  padding: 20px 70px;
   grid-template-columns: 1fr 1fr;
   input{
     border-radius: 20px;
@@ -56,7 +61,7 @@
   padding-top: 10px;
   display: grid;
   grid-template-areas: 'a b';
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 .googleSVG{
   width: 45px;
@@ -68,4 +73,22 @@
 }
 .resetPassword{
   padding-bottom: 30px;
+}
+
+@media(max-width: 920px){
+  .inputForm{
+    padding: 20px;
+  }
+}
+
+@media(max-width: 500px){
+  .inputForm{
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    grid-template-columns: 1fr 3fr;
+  }
+  .formRegister{
+    font-size: 14px;
+  }
 }

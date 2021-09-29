@@ -12,8 +12,8 @@
 .titlesItaly {
   display: flex;
   position: absolute;
-  left: -140px;
-  bottom: 170px;
+  left: -130px;
+  bottom: 173px;
   text-align: left;
   transform: rotate(-90deg);
   font-weight: 400;
@@ -46,18 +46,6 @@
   left: -20%;
 }
 
-
-@media(max-width: 500px) {
-  .titlesItaly {
-    bottom: 230px;
-  }
-  .titleOasis {
-    margin: -200px auto;
-    right: 0;
-    left: 0;
-  }
-}
-
 .test {
   position: absolute;
   top: 0;
@@ -81,15 +69,16 @@
 
 .left {
   position: relative;
-  padding: 1rem 3.2rem;
+  padding: 10px 20px;
   font-size: 1rem;
+  background-color: #282936;
   color: white;
   letter-spacing: 0.2rem;
-  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
   cursor: pointer;
   user-select: none;
   z-index: 2;
-  border-bottom: 1px solid white;
+  border: 1px solid white;
   border-radius: 20px;
 }
 
@@ -108,6 +97,7 @@
   border-right: 0;
 }
 .left:after{
+  color: #282936;
   z-index: -1;
   content: '';
   position: absolute;
@@ -118,9 +108,9 @@
   left: 0;
 }
 .left:hover {
-  border-bottom: 1px solid transparent;
-  color: white;
+  border: 1px solid transparent;
   transition-delay: 0.5s;
+  color: #282936;
 }
 
 .left:hover:before {
@@ -130,7 +120,7 @@
 
 .left:hover:after {
   border-radius: 20px;
-  background: #282936;
+  background: #ffffff;
   transition-delay: .35s;
   width: 100%;
 }
@@ -139,6 +129,7 @@
   position: absolute;
   top: 30%;
   right: 20%;
+  z-index: 2;
   img{
     width: 50px;
   }
@@ -151,5 +142,81 @@
   padding-top: 20px;
   p{
     padding-left: 20px;
+  }
+}
+
+
+
+//Mobile css
+@media(max-width: 990px) {
+  .titlesItaly{
+    bottom: 230px;
+  }
+}
+@media(max-width: 880px) {
+  .left {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+}
+@media(max-width: 700px) {
+.groupsTitle{
+  font-size: 16px;
+}
+  .titlesItaly span{
+    font-size: 16px;
+  }
+  .titlesItaly{
+    left: -110px;
+    bottom: 210px;
+  }
+  .madeTitle{
+    font-size: 16px;
+  }
+  .mainInfo {
+    display: block;
+    color: white;
+    padding-top: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 30px;
+  }
+  .left {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 45%;
+  }
+
+  .social{
+    width: 30px;
+    display: block;
+    position: inherit;
+    margin-left: 50px;
+  }
+
+  .titleOasis{
+    display: block;
+    left: 10%;
+    img {
+      display: block;
+      margin-top: 50px;
+      width: 220px;
+      height: auto;
+    }
+  }
+}
+@media(max-width: 530px) {
+  .titlesItaly {
+    bottom: 230px;
+  }
+  .mainInfo{
+    margin-right: 30px;
+  }
+  .left{
+    width: 100%;
   }
 }

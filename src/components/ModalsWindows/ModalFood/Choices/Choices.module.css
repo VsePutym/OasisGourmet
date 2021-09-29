@@ -1,0 +1,55 @@
+.ToppingLabel {
+    cursor: pointer;
+    display: block;
+}
+.radioInput {
+    cursor: pointer;
+    margin-right: 5px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.ToppingWrapper{
+    column-count: 2;
+    column-gap: 15px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.radioInput:checked + .CustomRadio::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+/* Рисуем внешний круг радиокнопки*/
+.CustomRadio{
+    position: relative; /* Родительский элемент*/
+    display: inline-block; /* Для применения рамок, размеров*/
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 2px solid #282936; /* Толщина, стиль, цвет рамки*/
+    border-radius: 50%; /* Получение круга*/
+    /*vertical-align: text-top; !* Выравнивание кнопки по центру*!*/
+    margin-left: 5px; /* Отступ между кнопкой и меткой*/
+}
+
+/* Рисуем внутренний круг */
+.CustomRadio::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #d97c67;
+    border-radius: 50%;
+
+    /* Выравниваем по центру относительно внешнего круга */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    /* Плавный переход трансформации масштабирования */
+    transition: 0.2s ease-in;
+}

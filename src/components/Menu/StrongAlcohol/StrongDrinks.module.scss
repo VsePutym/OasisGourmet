@@ -1,0 +1,79 @@
+.container {
+  text-align: center;
+}
+
+.BG {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  h1{
+    text-shadow: 27px 20px 4px black;
+  }
+}
+.title{
+  border-top: 2px solid #d97c67;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+.Tipe{
+  text-align: start;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.wrapperCoc{
+  padding-top: 70px;
+}
+.wrapperCoc,
+.wrapper{
+  padding-bottom: 40px;
+}
+.itemsBear{
+  cursor: pointer;
+  padding-top: 10px;
+  font-size: 16px;
+  display: grid;
+  grid-template-areas: 'a d f c b';
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-left: 100px;
+}
+.items{
+  cursor: pointer;
+  padding-top: 10px;
+  font-size: 16px;
+  display: grid;
+  grid-template-areas: 'a b c';
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  text-align: center;
+  margin-left: 100px;
+}
+
+.item{
+
+}
+.weight{
+  grid-area: c;
+}
+.filter{
+  grid-area: d;
+  text-align: start;
+}
+.alcohol{
+  grid-area: f;
+}
+.name{
+  grid-area: a;
+  text-align: start;
+}
+.price{
+  grid-area: b;
+}
+
+
+
+
+

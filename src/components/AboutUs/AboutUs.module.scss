@@ -5,6 +5,7 @@
 .title {
   text-align: center;
   background-color: white;
+
   p {
     padding: 30px 50px;
   }
@@ -29,7 +30,7 @@
 }
 
 .Sheff {
-padding: 30px 150px;
+  padding: 30px 150px;
   display: flex;
   justify-content: end;
   color: white;
@@ -77,59 +78,239 @@ padding: 30px 150px;
   }
 }
 
-.Wine{
+.Wine {
   background-color: white;
   height: 500px;
 }
-.solaia{
+
+.solaia {
   position: relative;
-  h1{
+
+  h1 {
     padding-left: 30px;
     color: #d97c67;
     font-size: 100px;
   }
-  img{
+
+  img {
     border-bottom: 2px solid #d97c67;
-    padding-left: 30px;
-    width: 220px;
+    width: 180px;
     position: absolute;
-    top: -150px;
     right: 10%;
+    bottom: 0;
   }
-  p{
-    width: 70%;
+
+  p {
+    width: 80%;
     padding: 30px;
     font-size: 16px;
   }
 }
-.solaiaDescription{
+
+.solaiaDescription {
   display: flex;
 }
+
 .KoravinInfo,
-.EggInfo{
+.EggInfo {
   position: absolute;
   margin-left: 20px;
 }
+
 .KoravinTitle,
-.EggTitle{
+.EggTitle {
   padding-bottom: 30px;
 }
-.mapInfo{
+
+.mapInfo {
+  font-size: 16px;
   margin-top: 30px;
+  padding-bottom: 30px;
   display: flex;
-  iframe{
-    max-width: 700px;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  iframe {
+    max-width: 600px;
     width: 100%;
     height: 300px;
     border: 2px solid #282936;
     border-radius: 20px;
   }
 }
-.mapDescription{
-  width: 40%;
-  transform: translateY(40%);
-  padding-right: 30px;
-  padding-left: 30px;
+
+.mapDescription {
+  padding-right: 20px;
 }
 
+.logos {
+  padding-top: 30px;
 
+  .logoRepino {
+    width: 100px;
+  }
+
+  .logoOasis {
+    width: 350px;
+  }
+}
+
+.payEat {
+  display: flex;
+  justify-content: start;
+  padding-top: 30px;
+
+  .jcb,
+  .visa {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  img {
+    width: 30px;
+  }
+}
+@media (max-width: 1350px) {
+  .solaia {
+    img {
+      width: 170px;
+    }
+    p {
+      width: 78%;
+      font-size: 16px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .Sheff {
+    padding: 30px;
+  }
+}
+@media (max-width: 1130px) {
+  .solaia {
+    img {
+      right: 0;
+    }
+  }
+  .payEat {
+    margin-left: 30px;
+  }
+  .logos {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .logoOasis {
+    width: 250px !important;
+  }
+  .logoRepino {
+    width: 200px !important;
+  }
+  .mapInfo {
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .solaia {
+    img {
+      right: 0;
+    }
+  }
+  .Sheff {
+    padding: 0 30px;
+    text-align: center;
+    display: block;
+    p {
+      font-size: 14px;
+      padding-left: 0;
+      padding-top: 20px;
+    }
+    img {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    .quotes {
+      width: 10px;
+
+    }
+  }
+
+}
+
+@media (max-width: 740px) {
+  .title {
+    p {
+      font-size: 14px;
+    }
+  }
+  .solaia {
+    p {
+      width: 75%;
+      font-size: 14px;
+    }
+  }
+  .mapInfo {
+    display: block;
+    text-align: center;
+  }
+  .payEat {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .logos {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}
+@media (max-width: 610px) {
+  .Bar {
+    text-align: center;
+    padding: 20px;
+    display: block;
+    img {
+      border-radius: 50%;
+      width: 150px;
+    }
+
+    p {
+      font-size: 14px;
+      max-width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .solaiaDescription {
+    display: block;
+  }
+  .solaia {
+    p {
+      width: 100%;
+      padding: 20px;
+    }
+    img{
+      width: 180px;
+      position: inherit;
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    h1 {
+      font-size: 30px;
+    }
+    h2{
+      font-size: 16px;
+    }
+  }
+  .solaia {
+    h1{
+      font-size: 70px;
+    }
+  }
+}
