@@ -1,5 +1,19 @@
 import krab from '../../images/Kitchen/snacks/krab-min.jpg';
 import losos from '../../images/Kitchen/snacks/losos-min.jpg';
+import bruscetaHamon from '../../images/Kitchen/snacks/bruscetaHamon-min.jpg';
+import sevichyLosos from '../../images/Kitchen/snacks/sevichyLosos-min.jpg';
+import sevichyTunec from '../../images/Kitchen/snacks/sevichyTunec-min.jpg';
+import sevichiSibas from '../../images/Kitchen/snacks/sevichiSibas-min.jpg';
+import vitella from '../../images/Kitchen/snacks/vitella-min.jpg';
+import bigSet from '../../images/Kitchen/snacks/bigSet-min.jpg';
+import photo from '../../images/Kitchen/snacks/photo-min.jpg';
+import olivki from '../../images/Kitchen/snacks/olivki-min.jpg';
+import hamon from '../../images/Kitchen/snacks/hamon-min.jpg';
+import lomo from '../../images/Kitchen/snacks/lomo-min.jpg';
+import milano from '../../images/Kitchen/snacks/milano-min.jpg';
+import salyami from '../../images/Kitchen/snacks/salyami-min.jpg';
+// import losos from '../../images/Kitchen/snacks/';
+// import losos from '../../images/Kitchen/snacks/';
 
 const SnacksMenuDB = {
   items: [
@@ -12,60 +26,61 @@ const SnacksMenuDB = {
       description: 'Белый ремесленный хлеб, крем из сыра филадельфия (сыр филадельфия, сливки), лосось' +
         ' гравлакс(лосось маринованный в цитрусовых и свёкле), дроблённые маслины.'
     },
-    // {
-    //   name: 'Брускета с хамоном, клубникой и горгонзолой', price: 890, weight: 190, id: 2, img: `${}`,
-    //   description: 'Белый ремесленный хлеб, крем из сыра горгонзола (горгонзола, сливки, маскарпоне), хамон, клубника.'
-    // },
-    // {
-    //   name: 'Севиче из лосося с манго и малиной', price: 1190, weight: 190, id: 3, img: `${}`,
-    //   description: 'Лосось манго, малина, авокадо, огурец, перец чили, соус из пюреманго, соус унаги.'
-    // },
-    // {
-    //   name: 'Севиче из тунца с томатами и соусом кимчи', price: 890, weight: 255, id: 4, img: `${}`,
-    //   description: 'Свежий тунец, авокадо, сегменты лайма и апельсина, томаты черри, кинза, заправленные томатным кимчи соусом.'
-    // },
-    // {
-    //   name: 'Севиче из сибаса с лаймом', price: 1190, weight: 177, id: 5, img: `${}`,
-    //   description: 'Сибас филе, сигменты лайма, масло из лимонного тимьяна.'
-    // },
-    // {
-    //   name: 'Вителло тонато', price: 550, weight: 155, id: 6, img: `${}`,
-    //   description: 'Филе говядины су-вид, нарезанное тонкими ломтиками. Соус на основе тунца и домашнего айоли с' +
-    //     'добавлением каперсов. Украшается оливковым маслом, каперсами, чёрным перцем и базеликом.'
-    // },
-    // {
-    //   name: 'Большой сет антипасти', price: 7900, weight: 2226, id: 7, img: `${}`,
-    //   description: 'Тарелка с выдержанными сырами (камамбер, горгонзола, пармезан, пекарино) и вялеными мясными деликатесами' +
-    //     '(пармская ветчина. салями, чоризо, милано). Сервируется гриссини, свежим базеликом, кедровым орехом, томаты ' +
-    //     'черри маринованные в соусе песто и оливки тонде.'
-    // },   {
-    //   name: 'Вяленные томаты', price: 390, weight: 100, id: 8, img: `${}`,
-    //   description: '.'
-    // },
-    // {
-    //   name: 'Оливки', price: 390, weight: 100, id: 9, img: `${}`,
-    //   description: '.'
-    // },
-    // {
-    //   name: 'Артишоки', price: 460, weight: 100, id: 10, img: `${}`,
-    //   description: '.'
-    // },
-    // {
-    //   name: 'Хамон', price: 690, weight: 50, id: 11, img: `${}`,
-    //   description: '.'
-    // },
-    // {
-    //   name: 'Имбирский ломо', price: 590, weight: 50, id: 12, img: `${}`,
-    //   description: '.'
-    // },
-    // {
-    //   name: 'Милано', price: 490, weight: 50, id: 13, img: `${}`,
-    //   description: '.'
-    // },
-    // {
-    //   name: 'Салями', price: 490, weight: 50, id: 14, img: `${}`,
-    //   description: '.'
-    // },
+    {
+      name: 'Брускета с хамоном, клубникой и горгонзолой', price: 890, weight: 190, id: 2, img: `${bruscetaHamon}`,
+      description: 'Белый ремесленный хлеб, крем из сыра горгонзола (горгонзола, сливки, маскарпоне), хамон, клубника.'
+    },
+    {
+      name: 'Севиче из лосося с манго и малиной', price: 1190, weight: 190, id: 3, img: `${sevichyLosos}`,
+      description: 'Лосось манго, малина, авокадо, огурец, перец чили, соус из пюреманго, соус унаги.'
+    },
+    {
+      name: 'Севиче из тунца с томатами и соусом кимчи', price: 890, weight: 255, id: 4, img: `${sevichyTunec}`,
+      description: 'Свежий тунец, авокадо, сегменты лайма и апельсина, томаты черри, кинза, заправленные томатным кимчи соусом.'
+    },
+    {
+      name: 'Севиче из сибаса с лаймом', price: 1190, weight: 177, id: 5, img: `${sevichiSibas}`,
+      description: 'Сибас филе, сигменты лайма, масло из лимонного тимьяна.'
+    },
+    {
+      name: 'Вителло тонато', price: 550, weight: 155, id: 6, img: `${vitella}`,
+      description: 'Филе говядины су-вид, нарезанное тонкими ломтиками. Соус на основе тунца и домашнего айоли с' +
+        'добавлением каперсов. Украшается оливковым маслом, каперсами, чёрным перцем и базеликом.'
+    },
+    {
+      name: 'Большой сет антипасти', price: 7900, weight: 2226, id: 7, img: `${bigSet}`,
+      description: 'Тарелка с выдержанными сырами (камамбер, горгонзола, пармезан, пекарино) и вялеными мясными деликатесами' +
+        '(пармская ветчина. салями, чоризо, милано). Сервируется гриссини, свежим базеликом, кедровым орехом, томаты ' +
+        'черри маринованные в соусе песто и оливки тонде.'
+    },
+    {
+      name: 'Вяленные томаты', price: 390, weight: 100, id: 8, img: `${photo}`,
+      description: '.'
+    },
+    {
+      name: 'Оливки', price: 390, weight: 100, id: 9, img: `${olivki}`,
+      description: '.'
+    },
+    {
+      name: 'Артишоки', price: 460, weight: 100, id: 10, img: `${photo}`,
+      description: '.'
+    },
+    {
+      name: 'Хамон', price: 690, weight: 50, id: 11, img: `${hamon}`,
+      description: '.'
+    },
+    {
+      name: 'Имбирский ломо', price: 590, weight: 50, id: 12, img: `${lomo}`,
+      description: '.'
+    },
+    {
+      name: 'Милано', price: 490, weight: 50, id: 13, img: `${milano}`,
+      description: '.'
+    },
+    {
+      name: 'Салями', price: 490, weight: 50, id: 14, img: `${salyami}`,
+      description: '.'
+    },
     // {
     //   name: 'Грана Падано', price: 390, weight: 50, id: 15, img: `${}`,
     //   description: '.'

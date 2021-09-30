@@ -38,16 +38,7 @@
   grid-template-areas: 'a b c d';
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
-.Fonts{
-  font-family: 'Pinyon Script', cursive;
-  bottom: 20%;
-  font-size: 70px;
-  right: -8%;
-  font-weight: 500;
-  z-index: 5;
-  max-width: 300px;
 
-}
 .openItem{
   grid-area: b;
   margin-left: 20px;
@@ -88,7 +79,16 @@
   left: 0;
   margin:  0 auto;
 }
+.Fonts{
+  font-family: 'Pinyon Script', cursive;
+  bottom: 20%;
+  font-size: 70px;
+  right: -8%;
+  font-weight: 500;
+  z-index: 5;
+  max-width: 300px;
 
+}
 .wineCircle{
   z-index: 3;
   width: 400px;

@@ -36,6 +36,8 @@ import Tea from "./components/Menu/Tea/Tea";
 import StrongAlcohol from "./components/Menu/StrongAlcohol/StrongAlcohol";
 import Bear from "./components/Menu/Bear/Bear";
 import SoftDrinks from "./components/Menu/SoftDrinks/SoftDrinks";
+import Breakfast from "./components/Menu/Breakfast/Breakfast";
+import Soups from "./components/Menu/Soups/Soups";
 
 
 
@@ -77,6 +79,8 @@ const App = () => {
         <Route exact path='/menu'  render={() => <Menu />}/>
         <Route  path='/menu/hot' render={() => <HotDish />} />
         <Route  path='/menu/cold' render={() => <ColdDish />} />
+        <Route  path='/menu/breakfast' render={() => <Breakfast />} />
+        <Route  path='/menu/soup' render={() => <Soups />} />
         <Route  path='/menu/snacks' render={() => <Snacks />} />
         <Route  path='/menu/desserts' render={() => <Desserts />} />
         <Route  path='/menu/pizza' render={() => <Pizza />} />

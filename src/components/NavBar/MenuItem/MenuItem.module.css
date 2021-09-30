@@ -98,4 +98,14 @@
     .countCart{
         right: 35%;
     }
+    .menuItem{
+        width: 35px;
+        height: 35px;
+    }
+    .menuItem img {
+        height: 15px;
+        width: 15px;
+        padding-left: 2px;
+        transform: translateY(-55%);
+    }
 }
